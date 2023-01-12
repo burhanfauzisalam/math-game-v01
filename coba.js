@@ -20,7 +20,7 @@ $(document).ready(function() {
             <button class="pilihan btn btn-success"><b>${acak[i]}</b></button>
         `)
         $('.pilihan').eq(i).click( () => {
-            var pil = $('.pilihan').eq(i).html()
+            var pil = $('.pilihan').eq(i).text()
             console.log(pil)
             if (pil == sum) {
                 $('#jawaban').html(`<h3>Benar, jawabannya adalah ${sum}</h3>`)
